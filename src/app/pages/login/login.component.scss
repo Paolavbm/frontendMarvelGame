@@ -1,0 +1,60 @@
+.button-cont{
+  background-image: url("https://wallpaper.dog/large/20461359.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+
+}
+
+
+
+
+
+.boton{
+  font-weight: bold;
+  background: linear-gradient(90deg, #870E19 0%, rgba(220,12,3,1) 100%);
+  color: white;
+  border-radius: 3px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: inline-block;
+  margin: auto;
+  width: 10em;
+  height: 5em;
+  border-radius: 15px;
+  text-align: center;
+  position: relative;
+  border: none;
+}
+.boton:hover{
+  font-weight: bold;
+  color: white;
+}
+
+
+.boton::after{
+  content: "";
+  background:  linear-gradient(90deg,#760001 50%, rgba(2,16,79,1) 100%);
+  position: absolute;
+  z-index: -1;
+  padding: 16px 20px;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 100%;
+  right: -100%;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+.boton:hover::after{
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}

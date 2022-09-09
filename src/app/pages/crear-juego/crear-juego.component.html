@@ -1,0 +1,32 @@
+<div class="contenedor">
+  
+  <div class="boxInfo">
+  <div class="topBox">
+    Crear juego
+  </div>
+
+  <div>
+  <h6 class="indicaciones">Listado de jugadores</h6>
+<!--
+  <form class="form" id="form">
+    <div id="busqueda" class="busqueda">
+    <input type="search" name="search" id="search" class="search" placeholder="Search for a player">
+    <button id="boton"></button>
+</div>
+</form> -->
+
+<div  class='lista card-body'>
+  <span >Mínimo dos jugadores</span>
+
+<div class="check-box" *ngFor="let user of listaUsuarios" >
+
+  <label class="list-group-item">
+    <input class="form-check-input me-1" type="checkbox" value=""/>
+    {{user.nombre}}  </label>
+</div>
+  </div>
+
+  <button class="btn" [routerLink]="['/listaTablero']" routerLinkActive="router-link-active" >Crear Juego</button>
+  </div>
+
+  </div>

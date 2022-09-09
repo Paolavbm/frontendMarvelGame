@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "marvelfullstack": {
+      "hosting": {
+        "frontendMarvelGame": [
+          "marvelfullstack"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "marvelfullstack"
+  }
+}
