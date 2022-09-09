@@ -45,3 +45,11 @@ Thumbs.db
 .firebase
 *-debug.log
 .runtimeconfig.json
+
+
+
+angular.json
+firebase.json
+karma.conf.js
+tailwind.config
+
